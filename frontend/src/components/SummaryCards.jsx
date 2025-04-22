@@ -1,10 +1,10 @@
+// src/components/SummaryCards.jsx
 import React from "react";
 import "./SummaryCards.css";
 
 function SummaryCards({ transactions }) {
   const totalTransactions = transactions.length;
   const fraudCount = transactions.filter((txn) => txn.isFraud).length;
-  const genuineCount = totalTransactions - fraudCount;
   const fraudPercentage = ((fraudCount / totalTransactions) * 100).toFixed(2);
 
   return (

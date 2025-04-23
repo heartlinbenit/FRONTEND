@@ -11,3 +11,4 @@ function UserPage({ transactions }) {
 }
 
 export default UserPage;
+

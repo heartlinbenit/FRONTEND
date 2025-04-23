@@ -12,15 +12,7 @@ function UserTransactionForm({ addTransaction }) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const currentTime = new Date().toISOString();
-  //   const transactionData = { ...formData, time: currentTime };
-
-  //   console.log("Transaction Submitted:", transactionData);
-  //   addTransaction(transactionData);
-  //   alert("Transaction submitted!");
-  // };
+ 
   
   const handleSubmit = (e) => {
     e.preventDefault();
